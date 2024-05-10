@@ -10,7 +10,9 @@ categories:
  - default
 tags: 
  - javascript
+sticky: 1
 ---
+
 # ECMAScript与Javascript模块化
 
 ## ECMAScript是什么

@@ -45,7 +45,8 @@ export default defineConfig({
     // },
     nav: [
       { text: '首页', link: '/' },
-      // { text: '关于作者', link: 'https://sugarat.top/aboutme.html' }
+      { text: '关于', link: '/pages/about' },
+      { text: '隐私政策', link: '/pages/private' },
     ],
     socialLinks: [
       { icon: 'github',link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme' }
