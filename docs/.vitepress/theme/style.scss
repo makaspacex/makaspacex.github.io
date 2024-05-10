@@ -1,0 +1,31 @@
+html.dark {
+  --bg-gradient: 27, 27, 31, 1;
+  --bg-gradient-home: 20, 20, 20;
+  --box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.6);
+  --nav-bgc: rgba(0, 0, 0, 0.8);
+  --box-shadow-hover: 0 2px 16px 0 rgba(0, 0, 0, 0.7);
+  --badge-font-color: #bdc3cc;
+  --description-font-color: #9facba;
+}
+.dark {
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-elv: #202127;
+  --vp-c-bg-soft: #202127;
+}
+
+.dark .VPHome {
+  background-color: rgb(10, 10, 11);
+  background-image: url("./assets/grid.svg");
+  // background-image: none;
+}
+.VPHome {
+  background: radial-gradient(
+    ellipse,
+    rgba(var(--bg-gradient-home), 1) 100%,
+    rgba(var(--bg-gradient-home), 0) 100%
+  );
+}
+
+
+
