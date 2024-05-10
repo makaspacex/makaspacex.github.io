@@ -4,4 +4,3 @@ cache
 .temp
 .DS_Store
 runtime/
-pnpm-lock.yaml
