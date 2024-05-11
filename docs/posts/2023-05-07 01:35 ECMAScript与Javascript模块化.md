@@ -236,3 +236,8 @@ CommonJS 加载的是一个对象（即`module.exports`属性），该对象只�
 另一个大而全的工具，可以转换CommonJS和打包Javascript、图片、css等一切资源到浏览器运行。
 
 ![img](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/oJblRG.png)
+
+参考资料：
+- https://juejin.cn/post/6844903576309858318
+- http://huangxuan.me/js-module-7day
+- https://es6.ruanyifeng.com/#docs/intro
