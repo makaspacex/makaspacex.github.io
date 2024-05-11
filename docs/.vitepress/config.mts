@@ -39,18 +39,20 @@ export default defineConfig({
 
     // 设置logo
     logo: '/logo.png',
-    // editLink: {
-    //   pattern:
-    //     'https://github.com/ATQQ/sugar-blog/tree/master/packages/blogpress/:path',
-    //   text: '去 GitHub 上编辑内容'
-    // },
+
+    // 去github上编辑
+    editLink: {
+      pattern:
+        'https://github.com/makaspacex/makaspacex.github.io/blob/main/docs/:path',
+      text: '去 GitHub 上编辑内容'
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '关于', link: '/pages/about' },
       { text: '隐私政策', link: '/pages/private' },
     ],
     socialLinks: [
-      { icon: 'github',link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme' }
+      { icon: 'github',link: 'https://github.com/makaspacex' }
     ]
   }
 })
