@@ -1,13 +1,12 @@
 ---
 title: Jetbrains Gateway使用特定版本的后端
-id: 6fc33da1-cf6a-474a-aaeb-4adf77947c3e
 date: 2024-05-10 09:24:26
 author: admin
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/VBZH0E.png
-excerpt: pycharm更新到2024.1.1后，debug控制台无法调试代码，2024.1是正常的。但是选择后端时却没有了2024.1版本。解决办法就是使用jetbrains官方的下载程序下载好特定版本的后端，然后gateway选择的时候上传到服务器即可。 入口页面或者直接访问地址 https//www.
-permalink: /archives/wei-ming-ming-wen-zhang
-categories:
 tags: 
+ - jetbrains
+ - pycharm
+ - 远程开发
 ---
 # Jetbrains Gateway使用特定版本的后端
 

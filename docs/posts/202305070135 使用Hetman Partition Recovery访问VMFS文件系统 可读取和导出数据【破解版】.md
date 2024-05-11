@@ -1,14 +1,8 @@
 ---
 title: 使用Hetman Partition Recovery访问VMFS文件系统 可读取和导出数据【破解版】
-id: 104
 date: 2023-05-07 01:35:42
 author: admin
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/4TSjmF.png
-excerpt: 支持的文件系统和系统要求 Partition RecoveryTM支持所有版本的FAT和NTFS文件系统。对于NTFS磁盘，该工具支持替代数据流（ADS），并可以恢复压缩和加密的文件和文件夹。 exFAT, VFAT, FAT 12 / 16 / 32 (memory card or USB dri
-permalink: /archives/1715324681073
-categories:
- - 虚拟化
- - default
 tags: 
  - esxi
  - vmfs

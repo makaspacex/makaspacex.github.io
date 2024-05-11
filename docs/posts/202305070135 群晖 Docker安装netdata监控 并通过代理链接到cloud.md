@@ -1,16 +1,11 @@
 ---
 title: 群晖 Docker安装netdata监控 并通过代理链接到cloud
-id: 124
 date: 2023-05-07 01:35:42
 author: admin
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/zAacAx.png
-excerpt: 命令如下： docker run -d --name=netdata \  -p 1999919999 \  -v /etc/passwd/host/etc/passwdro \  -v /etc/group/host/etc/groupro \  -v /proc/host/p
-permalink: /archives/%E7%BE%A4%E6%99%96%20Docker%E5%AE%89%E8%A3%85netdata%E7%9B%91%E6%8E%A7%20%E5%B9%B6%E9%80%9A%E8%BF%87%E4%BB%A3%E7%90%86%E9%93%BE%E6%8E%A5%E5%88%B0cloud
-categories:
- - linux
- - default
 tags: 
  - netdata
+ - 群晖
 ---
 # 群晖 Docker安装netdata监控 并通过代理链接到cloud
 * **命令如下：**
