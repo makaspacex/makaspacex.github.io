@@ -3,7 +3,7 @@ title: vscode在markdown中通过upic直接粘贴图片
 date: 2024-05-11 10:36:00
 tags: 
  - upic
- - vsocode
+ - vscode
  - markdown
 ---
 
