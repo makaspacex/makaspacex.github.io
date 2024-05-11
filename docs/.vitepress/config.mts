@@ -52,7 +52,7 @@ export default defineConfig({
       { text: '隐私政策', link: '/pages/private' },
     ],
     socialLinks: [
-      { icon: 'github',link: 'https://github.com/makaspacex' }
+      { icon: 'github',link: 'https://github.com/makaspacex/makaspacex.github.io' }
     ]
   }
 })

@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "push": "git add *; git commit -m 'update'; echo 'hi'",
+    "upload": "rsync -avH --delete -e 'ssh -p 7004' docs/.vitepress/dist/ root@blog.makafly.com:/opt/1panel/apps/openresty/openresty/www/sites/blog.makafly.com/index",
+    "publish": "npm-run-all -s build -lp push upload"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
