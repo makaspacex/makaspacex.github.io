@@ -8,7 +8,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs",
-    "push": "git add *; git commit -m 'update'; echo 'hi'",
+    "push": "git add *; git add .*; git commit -m 'update'; git push",
     "upload": "rsync -avH --delete -e 'ssh -p 7004' docs/.vitepress/dist/ root@blog.makafly.com:/opt/1panel/apps/openresty/openresty/www/sites/blog.makafly.com/index",
     "publish": "npm-run-all -s build -lp push upload"
   },
