@@ -10,6 +10,6 @@ blog:
   - 无论多么沉重的负担，也不要忘记微笑；无论多么漫长的路程，也不要忘记坚持
   - 生活的真谛不在繁华，而在于淡泊
  # 设置 inspiringTimeout 可以实现自动切换
- inspiringTimeout: 2000
+ inspiringTimeout: 30000
  pageSize: 10
 ---

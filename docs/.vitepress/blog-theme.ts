@@ -39,7 +39,24 @@ const blogTheme = getThemeConfig({
       link: 'https://www.beian.gov.cn/portal/index.do'
     },
   },
+  authorList: [
+    {
+      nickname: 'makaspacex',
+      url: 'https://github.com/makaspacex/makaspacex.github.io',
+      des: '你的指尖,拥有改变世界的力量'
+    },
+    {
+      nickname: 'admin',
+      url: 'https://github.com/makaspacex/makaspacex.github.io',
+      des: '你的指尖,拥有改变世界的力量'
+    },
+    {
+      nickname: '黄玄',
+      url: 'https://github.com/huxpro',
+      des: '离开世界之前 一切都是过程'
+    },
 
+  ],
   // 默认开启
   darkTransition: false,
 
