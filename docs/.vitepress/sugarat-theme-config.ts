@@ -16,7 +16,7 @@ import { getThemeConfig } from '@sugarat/theme/node'
 // }
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
-const blogTheme = getThemeConfig({
+const sugaratThemeConfig = getThemeConfig({
   // 开启RSS支持
   // RSS,
 
@@ -120,4 +120,4 @@ const blogTheme = getThemeConfig({
   // }
 })
 
-export { blogTheme }
+export { sugaratThemeConfig}

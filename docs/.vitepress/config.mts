@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 // 导入主题的配置
-import { blogTheme } from './blog-theme'
+import { sugaratThemeConfig } from './sugarat-theme-config'
 
 // 如果使用 GitHub/Gitee Pages 等公共平台部署
 // 通常需要修改 base 路径，通常为“/仓库名/”
@@ -13,7 +13,7 @@ const base = "/"
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
   // 继承博客主题(@sugarat/theme)
-  extends: blogTheme,
+  extends: sugaratThemeConfig,
   base,
   lang: 'zh-cn',
   title: '玛卡巴卡',
@@ -53,6 +53,12 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github',link: 'https://github.com/makaspacex/makaspacex.github.io' }
-    ]
+    ],
+  },
+  markdown: {
+    math: true,
+    image: {
+      lazyLoading: true
+    }
   }
 })
