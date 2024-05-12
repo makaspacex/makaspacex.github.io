@@ -15,16 +15,16 @@ html.dark {
 }
 
 .dark .VPHome {
-  background-color: rgb(10, 10, 11);
+  &::before {
+    background-color: rgb(10, 10, 11);
+    background-image: none;
+  }
   background-image: url("./assets/grid.svg");
-  // background-image: none;
 }
 .VPHome {
-  background: radial-gradient(
-    ellipse,
-    rgba(var(--bg-gradient-home), 1) 100%,
-    rgba(var(--bg-gradient-home), 0) 100%
-  );
+  &::before {
+    background-image: none;
+  }
 }
 
 .el-row {
