@@ -55,6 +55,11 @@ const sugaratThemeConfig = getThemeConfig({
       url: 'https://github.com/huxpro',
       des: '离开世界之前 一切都是过程'
     },
+    {
+      nickname: '阮一峰',
+      url: 'https://www.ruanyifeng.com/',
+      des: '保持专注，持续发货。尽早构建，始终构建。提高自己，编写可靠/简单/愚蠢的代码。'
+    },
 
   ],
   // 默认开启
@@ -93,7 +98,7 @@ const sugaratThemeConfig = getThemeConfig({
       des: 'Vite & Vue Powered Static Site Generator',
       avatar:
         'https://vitepress.dev/vitepress-logo-large.webp',
-      url: 'https://vitepress.dev/',
+      url: 'https://vitepress.dev/zh/',
     },
   ],
   // 评论
