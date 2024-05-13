@@ -100,7 +100,7 @@ const sugaratThemeConfig = getThemeConfig({
   comment: {
     type: 'giscus',
     options: {
-      repo: 'makaspacex/makafly-blog',
+      repo: 'makaspacex/makaspacex.github.io',
       repoId: 'R_kgDOL5rwgw',
       category: 'Announcements',
       categoryId: 'DIC_kwDOL5rwg84CfREm',
