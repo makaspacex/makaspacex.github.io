@@ -18,7 +18,7 @@ export default defineConfig({
   lang: 'zh-cn',
   title: '玛卡巴卡',
   titleTemplate: ':title',
-  description: '粥里有勺糖的博客主题，基于 vitepress 实现',
+  description: '使用博客主题@sugarat/theme，基于 vitepress 实现',
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [

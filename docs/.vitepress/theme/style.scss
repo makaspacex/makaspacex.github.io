@@ -27,6 +27,11 @@ html.dark {
   }
 }
 
+.VPDoc .content main img {
+  max-height: 430px;
+}
+
+// element的样式
 .el-row {
   margin-bottom: 20px;
 }
