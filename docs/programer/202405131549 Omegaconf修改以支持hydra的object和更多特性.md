@@ -3,7 +3,7 @@ title: Omegaconf修改以支持hydra的object和更多特性
 lang: zh-CN
 date: 2024-05-13 15:49:37
 author: makaspacex
-cover: 
+cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/E27fpQ.png
 tags:
  - python
  - hydra
