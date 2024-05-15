@@ -3,7 +3,7 @@ title: 群晖 Docker安装netdata监控 并通过代理链接到cloud
 date: 2023-05-07 01:35:42
 author: admin
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/zAacAx.png
-tags: 
+tags:
  - netdata
  - 群晖
 ---

@@ -2,7 +2,7 @@
 title: ECMAScript与Javascript模块化
 date: 2023-05-11 01:35:43
 author: admin
-tags: 
+tags:
  - javascript
  - es6
  - 模块化
@@ -122,12 +122,12 @@ require(['jquery', 'math'],function($, math){
 require.js在申明依赖的模块时会在第一之间加载并执行模块内的代码：
 
 ```javascript
-define(["a", "b", "c", "d", "e", "f"], function(a, b, c, d, e, f) { 
+define(["a", "b", "c", "d", "e", "f"], function(a, b, c, d, e, f) {
     // 等于在最前面声明并初始化了要用到的所有模块
     if (false) {
       // 即便没用到某个模块 b，但 b 还是提前执行了
       b.foo()
-    } 
+    }
 });复制代码
 ```
 
@@ -135,13 +135,13 @@ CMD是另一种js模块化方案，它与AMD很类似，不同点在于：AMD �
 
 ```javascript
 /** AMD写法 **/
-define(["a", "b", "c", "d", "e", "f"], function(a, b, c, d, e, f) { 
+define(["a", "b", "c", "d", "e", "f"], function(a, b, c, d, e, f) {
      // 等于在最前面声明并初始化了要用到的所有模块
     a.doSomething();
     if (false) {
         // 即便没用到某个模块 b，但 b 还是提前执行了
         b.doSomething()
-    } 
+    }
 });
 
 /** CMD写法 **/

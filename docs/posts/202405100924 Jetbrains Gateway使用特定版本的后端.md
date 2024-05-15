@@ -3,7 +3,7 @@ title: Jetbrains Gateway使用特定版本的后端
 date: 2024-05-10 09:24:26
 author: admin
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/VBZH0E.png
-tags: 
+tags:
  - jetbrains
  - pycharm
  - 远程开发
@@ -26,24 +26,19 @@ pycharm更新到2024.1.1后，debug控制台无法调试代码，2024.1是正常
 
 ![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/Bi288l.png)
 
-
 等待下载完成即可。
-
 
 ---
 
 分割线：下面的内容适合大批量下载，简单方法见上面
 
-
 官方指导教程：[完全离线模式| IntelliJ IDEA 文档 --- Fully offline mode | IntelliJ IDEA Documentation (jetbrains.com)](https://www.jetbrains.com/help/idea/fully-offline-mode.html)
-
 
 ### 下载Jetbrains
 
 下载地址： `https://www.jetbrains.com/code-with-me/on-prem/#downloads`
 
 ![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/xYIRsg.png)
-
 
 ### 解压后进入bin目录
 
@@ -54,22 +49,18 @@ pycharm更新到2024.1.1后，debug控制台无法调试代码，2024.1是正常
 
 ```
 
-
 `--products-filter`刚开始只需要随便输入一个错误的，然后程序报错就会出现所有的可选项。
 
 `--build-filter` 在这里查询 `https://www.jetbrains.com/idea/download/other.html`
 
 ![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/4rQwkn.png)
 
-
 下载会得到一个压缩文件，然后gateway上传即可。
-
 
 ### Gateway选择后端时上传
 
 ![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/DR4OTA.png)
 
 ![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/ryTELd.png)
-
 
 然后等待即可。

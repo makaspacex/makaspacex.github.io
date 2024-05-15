@@ -26,7 +26,7 @@ It should come as no surprise to most that it is rare to observe linear relation
 
 ![img](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/picgo/1*u9gtsJxEGALN-DuxA8yx9g.png)
 
-Most of the time correlation is used, it is used to try and identify not necessarily a linear or monotonic relationship between two variables of interest, but instead identify if there exists **any** relationship. This creates problems, for if relationships are neither linear nor monotonic, these current measures do not work very well. Note how the plots below all display clearly strong relationships between two variables, but commonly used correlation techniques are only good at identifying monotonic ones.
+Most of the time correlation is used, it is used to try and identify not necessarily a linear or monotonic relationship between two variables of interest, but instead identify if there exists  relationship. This creates problems, for if relationships are neither linear nor monotonic, these current measures do not work very well. Note how the plots below all display clearly strong relationships between two variables, but commonly used correlation techniques are only good at identifying monotonic ones.
 
 ![img](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/picgo/1*cG4C1gevWhRxhLWmDIodrw-20240514002423692.png)
 
@@ -72,7 +72,7 @@ xicor <- function(X, Y, ties = TRUE){
     l <- rank(Y[order(X)], ties.method = "max")
     return( 1 - n*sum( abs(r[-1] - r[-n]) ) / (2*sum(l*(n - l))) )
   } else {
-    return( 1 - 3 * sum( abs(r[-1] - r[-n]) ) / (n^2 - 1) )    
+    return( 1 - 3 * sum( abs(r[-1] - r[-n]) ) / (n^2 - 1) )
   }
 }
 
@@ -156,7 +156,4 @@ Unless otherwise noted, all images, plots, and tables are by the author.
 [1] S. Chatterjee, [A New Coefficient of Correlation](https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1758115) (2020), Journal of the American Statistical Association.
 
 [2] E. Heuvel and Z. Zhan, [Myths About Linear and Monotonic Associations](https://www.tandfonline.com/doi/full/10.1080/00031305.2021.2004922) (2022), The American Statistician.
-
-
-
 

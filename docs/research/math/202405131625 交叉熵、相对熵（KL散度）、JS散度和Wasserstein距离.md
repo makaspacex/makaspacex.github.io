@@ -24,8 +24,6 @@ tags:
 
 **KL散度（相对熵）：** 衡量不同策略之间的差异呢，所以我们使用KL散度来做模型分布的拟合损失。
 
-
-
 ## 信息量
 
 任何事件都会承载着一定的信息量，包括已经发生的事件和未发生的事件，只是它们承载的信息量会有所不同。如昨天下雨这个已知事件，因为已经发生，既定事实，那么它的信息量就为0。如明天会下雨这个事件，因为未有发生，那么这个事件的信息量就大。
@@ -51,7 +49,7 @@ $H(X)=−\sum_{i=1}^{n}{p(x_i)log(p(x_i))}$
 然而有一类比较特殊的问题，比如投掷硬币只有两种可能，字朝上或花朝上。买彩票只有两种可能，中奖或不中奖。我们称之为0-1分布问题（二项分布的特例），对于这类问题，熵的计算方法可以简化为如下算式：
 $$
 \begin{aligned}
-H(X) &=−\sum_{i=1}^{n}{p(x_i)log(p(x_i))} \\ 
+H(X) &=−\sum_{i=1}^{n}{p(x_i)log(p(x_i))} \\
      &=-p(x)log(p(x)) - (1-p(x))log(1-p(x))
 
 \end{aligned}
@@ -80,8 +78,8 @@ $D_{KL}(p||q)=\sum_{i=1}^{n}{p(x_i)log(\frac{p(x_i)}{q(x_i)})}$
 $$
 \begin{aligned}
 
-D_{KL}(p||q) &=\sum_{i=1}^{n}{p(x_i)log(\frac{p(x_i)}{q(x_i)})} \\ 
-              &=\sum_{i=1}^{n}{p(x_i)log(p(x_i))}-\sum_{i=1}^{n}{p(x_i)log(q(x_i))} \\ 
+D_{KL}(p||q) &=\sum_{i=1}^{n}{p(x_i)log(\frac{p(x_i)}{q(x_i)})} \\
+              &=\sum_{i=1}^{n}{p(x_i)log(p(x_i))}-\sum_{i=1}^{n}{p(x_i)log(q(x_i))} \\
               &=-H(p(x)) + [-\sum_{i=1}^{n}{p(x_i)log(q(x_i))}]
 
 \end{aligned}
@@ -97,7 +95,7 @@ $H(p, q) = -\sum_{i=1}^{n}{p(x_i)log(q(x_i))}$
 
 **JS散度** 度量了两个概率分布的相似度，基于KL散度的变体，解决了KL散度非对称的问题。一般地，JS散度是对称的，其取值是0到1之间。定义如下：
 
-![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/v2-964dc662024ed1d0f9dd924657f609d2_b.png)  
+![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/v2-964dc662024ed1d0f9dd924657f609d2_b.png)
 
 ## Wasserstein距离（该部分摘自KL散度、JS散度、Wasserstein距离）
 
@@ -107,7 +105,7 @@ KL散度和JS散度度量的问题：
 
 **Wasserstein距离** 度量两个概率分布之间的距离，定义如下
 
-![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/v2-39f7387425a78afdbc969e126c193075_b.png)  
+![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/v2-39f7387425a78afdbc969e126c193075_b.png)
 
 Π(P1,P2)是P1和P2分布组合起来的所有可能的联合分布的集合。对于每一个可能的联合分布γ，可以从中采样(x,y)∼γ得到一个样本x和y，并计算出这对样本的距离||x−y||，所以可以计算该联合分布γ下，样本对距离的期望值E(x,y)∼γ[||x−y||]。在所有可能的联合分布中能够对这个期望值取到的下界infγ∼Π(P1,P2)E(x,y)∼γ[||x−y||]就是Wasserstein距离。
 
@@ -115,7 +113,7 @@ KL散度和JS散度度量的问题：
 
 **Wasserstein距离相比KL散度、JS散度的优越性在于，即便两个分布没有重叠，Wasserstein距离仍然能够反映它们的远近；** 而JS散度在此情况下是常量，KL散度可能无意义。WGAN本作通过简单的例子展示了这一点。考虑如下二维空间中的两个分布$P_1$和$P_2$，$P_1$在线段AB上均匀分布，$P_2$在线段CD上均匀分布，通过控制参数$\theta$可以控制着两个分布的距离远近。
 
-![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/CPn5n1.png)  
+![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/CPn5n1.png)
 
 此时容易得到（读者可自行验证）
 
@@ -127,12 +125,11 @@ $$
 JS(P_1||P_2)= \begin{cases} \log 2 & \text{if $\theta \neq 0$} \\ 0 & \text{if $\theta - 0$} \end{cases}（突变）
 $$
 
-
 $W(P_0, P_1) = |\theta|$（平滑）
 
 KL散度和JS散度是突变的，要么最大要么最小，**Wasserstein距离却是平滑的** ，如果我们要用梯度下降法优化$\theta$这个参数，前两者根本提供不了梯度，Wasserstein距离却可以。类似地，在高维空间中如果两个分布不重叠或者重叠部分可忽略，则KL和JS既反映不了远近，也提供不了梯度，**但是Wasserstein却可以提供有意义的梯度** 。
 
-## WGAN中对KL散度和JS散度的描述（摘自：郑华滨：令人拍案叫绝的Wasserstein GAN）  
+## WGAN中对KL散度和JS散度的描述（摘自：郑华滨：令人拍案叫绝的Wasserstein GAN）
 
 假设$P_r$表示真实样本分布，$P_g$是由生成器产生的样本分布。原始GAN中：
 
@@ -152,10 +149,10 @@ $\mathbb{E}_{x\sim P_g}[- \log D(x)]$（公式3）
 $$
 \begin{aligned}
 
-- \frac{P_r(x)}{D(x)} + \frac{P_g(x)}{1 - D(x)} &= 0 \\ 
+- \frac{P_r(x)}{D(x)} + \frac{P_g(x)}{1 - D(x)} &= 0 \\
                                                 &\Downarrow \\
-                              (1 - D(x))P_r(x) &= D(x)P_g(x) \\ 
-                                              &\Downarrow \\ 
+                              (1 - D(x))P_r(x) &= D(x)P_g(x) \\
+                                              &\Downarrow \\
                               D(x)(P_g(x)+P_r(x))&=P_r(x)
 
 \end{aligned}
@@ -213,20 +210,17 @@ $$
 \begin{align} KL(P_g || P_r) &= \mathbb{E}_{x \sim P_g} [\log \frac{P_g(x)}{P_r(x)}] \\ &= \mathbb{E}_{x \sim P_g} [\log \frac{P_g(x) / (P_r(x) + P_g(x))}{P_r(x) / (P_r(x) + P_g(x))}] \\ &= \mathbb{E}_{x \sim P_g} [\log \frac{1 - D^*(x)}{D^*(x)}] \\ &= \mathbb{E}_{x \sim P_g} \log [1 - D^*(x)] -  \mathbb{E}_{x \sim P_g} \log D^*(x) \end{align} \\（公式10）
 $$
 
-
 由公式3，9，10可得最小化目标的等价变形
 
 $$
 \begin{align} \mathbb{E}_{x \sim P_g} [-\log D^*(x)] &=  KL(P_g || P_r) -  \mathbb{E}_{x \sim P_g} \log [1 - D^*(x)] \\ &= KL(P_g || P_r) - 2JS(P_r || P_g) + 2\log 2 + \mathbb{E}_{x\sim P_r}[\log D^*(x)] \end{align}
 $$
 
-
 注意上式最后两项不依赖于生成器G，最终得到最小化公式3等价于最小化
 
 $KL(P_g || P_r) - 2JS(P_r || P_g)$（公式11）
 
 这个等价最小化目标存在两个严重的问题。第一是它同时要最小化生成分布与真实分布的KL散度，却又要最大化两者的JS散度，一个要拉近，一个却要推远！这在直观上非常荒谬，在数值上则会导致梯度不稳定，这是后面那个JS散度项的毛病。
-
 
 参考：
 
@@ -243,6 +237,4 @@ $KL(P_g || P_r) - 2JS(P_r || P_g)$（公式11）
 [https://zxth93.github.io/2017/09/27/KL散度JS散度Wasserstein距离/index.html](https://zxth93.github.io/2017/09/27/KL散度JS散度Wasserstein距离/index.html)
 
 [https://www.zhihu.com/question/41252833/answer/195901726](https://www.zhihu.com/question/41252833/answer/195901726)
-
-
 

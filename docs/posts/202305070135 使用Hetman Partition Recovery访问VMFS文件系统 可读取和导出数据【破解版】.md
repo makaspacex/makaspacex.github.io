@@ -3,7 +3,7 @@ title: 使用Hetman Partition Recovery访问VMFS文件系统 可读取和导出�
 date: 2023-05-07 01:35:42
 author: admin
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/4TSjmF.png
-tags: 
+tags:
  - esxi
  - vmfs
 ---

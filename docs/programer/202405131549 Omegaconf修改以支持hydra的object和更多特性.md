@@ -41,8 +41,8 @@ OmegaConf.load() # 修改这个方法
         ret: Union[DictConfig, ListConfig]
         if obj is None:
             ret = OmegaConf.create()
-        else: 
-            # ret = OmegaConf.create(obj) # [!code --] # [!code focus:2] 
+        else:
+            # ret = OmegaConf.create(obj) # [!code --] # [!code focus:2]
             ret = OmegaConf.create(obj, flags={"allow_objects": True}) # [!code ++]
         return ret
 
@@ -54,7 +54,7 @@ OmegaConf.load() # 修改这个方法
 # /opt/mambaforge/envs/iecr/lib/python3.10/site-packages/omegaconf/_utils.py
 
 def get_yaml_loader() -> Any:
-    # class OmegaConfLoader(yaml.SafeLoader):  # type: ignore # [!code --] # [!code focus:2] 
+    # class OmegaConfLoader(yaml.SafeLoader):  # type: ignore # [!code --] # [!code focus:2]
     class OmegaConfLoader(yaml.UnsafeLoader):  # type: ignore # [!code ++]
         def construct_mapping(self, node: yaml.Node, deep: bool = False) -> Any:
             keys = set()
