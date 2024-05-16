@@ -1,6 +1,6 @@
 ---
 title: Must Know Tips/Tricks in Deep Neural Networks
-lang: zh-CN
+lang: en-US
 date: 2024-05-14 00:41:11
 author: makaspacex
 cover: https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/picgo/tricks.jpeg
