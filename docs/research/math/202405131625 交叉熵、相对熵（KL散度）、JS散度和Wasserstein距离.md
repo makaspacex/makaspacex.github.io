@@ -57,13 +57,13 @@ $$
 
 ## 相对熵（KL散度）
 
-相对熵又称KL散度,如果我们对于同一个随机变量 x 有两个单独的概率分布 P(x) 和 Q(x)，我们可以使用 KL 散度（Kullback-Leibler (KL) divergence）来衡量这两个分布的差异。
+相对熵又称KL散度,如果我们对于同一个随机变量 $x$ 有两个单独的概率分布 $P(x)$ 和 $Q(x)$，我们可以使用 KL 散度（Kullback-Leibler (KL) divergence）来衡量这两个分布的差异。
 
-在机器学习中，P往往用来表示样本的真实分布，Q用来表示模型所预测的分布，那么KL散度就可以计算两个分布的差异，也就是Loss损失值。
+在机器学习中，$P$往往用来表示样本的真实分布，$Q$用来表示模型所预测的分布，那么KL散度就可以计算两个分布的差异，也就是Loss损失值。
 
 $D_{KL}(p||q)=\sum_{i=1}^{n}{p(x_i)log(\frac{p(x_i)}{q(x_i)})}$
 
-从KL散度公式中可以看到Q的分布越接近P（Q分布越拟合P），那么散度值越小，即损失值越小。
+从KL散度公式中可以看到$Q$的分布越接近$P$（$Q$分布越拟合$P$），那么散度值越小，即损失值越小。
 
 因为对数函数是凸函数，所以KL散度的值为非负数。
 
@@ -94,8 +94,9 @@ $H(p, q) = -\sum_{i=1}^{n}{p(x_i)log(q(x_i))}$
 ## JS散度
 
 **JS散度** 度量了两个概率分布的相似度，基于KL散度的变体，解决了KL散度非对称的问题。一般地，JS散度是对称的，其取值是0到1之间。定义如下：
-
-![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/v2-964dc662024ed1d0f9dd924657f609d2_b.png)
+$$
+JS(P_1 \parallel P_2) = \frac{1}{2} KL(P_1 \parallel \frac{P_1 + P_2}{2}) + \frac{1}{2} KL(P_2 \parallel \frac{P_1+P_2}{2})
+$$
 
 ## Wasserstein距离（该部分摘自KL散度、JS散度、Wasserstein距离）
 
@@ -104,9 +105,9 @@ KL散度和JS散度度量的问题：
 如果两个分配P,Q离得很远，完全没有重叠的时候，那么KL散度值是没有意义的，而JS散度值是一个常数。这在学习算法中是比较致命的，这就意味这这一点的梯度为0。梯度消失了。
 
 **Wasserstein距离** 度量两个概率分布之间的距离，定义如下
-
-![](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/uPic/v2-39f7387425a78afdbc969e126c193075_b.png)
-
+$$
+W(P_1,P_2) = \inf_{\gamma \sim \prod(P_1,P_2)} \mathbb{E}_{(x,y)\sim \gamma} [ \parallel x-y \parallel ]
+$$
 Π(P1,P2)是P1和P2分布组合起来的所有可能的联合分布的集合。对于每一个可能的联合分布γ，可以从中采样(x,y)∼γ得到一个样本x和y，并计算出这对样本的距离||x−y||，所以可以计算该联合分布γ下，样本对距离的期望值E(x,y)∼γ[||x−y||]。在所有可能的联合分布中能够对这个期望值取到的下界infγ∼Π(P1,P2)E(x,y)∼γ[||x−y||]就是Wasserstein距离。
 
 直观上可以把E(x,y)∼γ[||x−y||]理解为在γ这个路径规划下把土堆P1挪到土堆P2所需要的消耗。而Wasserstein距离就是在最优路径规划下的最小消耗。所以Wesserstein距离又叫Earth-Mover距离。

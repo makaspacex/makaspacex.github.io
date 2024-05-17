@@ -100,6 +100,26 @@ const sugaratThemeConfig = getThemeConfig({
         'https://vitepress.dev/vitepress-logo-large.webp',
       url: 'https://vitepress.dev/zh/',
     },
+    {
+      nickname: 'Element Plus',
+      des: '基于 Vue 3，面向设计师和开发者的组件库',
+      avatar:
+        'https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/picgo/202405171100507.png',
+      url: 'https://cn.element-plus.org/zh-CN/component/overview.html',
+    },
+    {
+      nickname: 'Vue',
+      des: '渐进式JavaScript 框架',
+      avatar:'https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/picgo/202405171113282.png',
+      url: 'https://cn.vuejs.org/',
+    },
+    {
+      nickname: 'Pinia',
+      des: '符合直觉的Vue.js 状态管理库',
+      avatar:'https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/picgo/202405171115952.png',
+      url: 'https://pinia.vuejs.org/zh/',
+    },
+    
   ],
   // 评论
   comment: {
