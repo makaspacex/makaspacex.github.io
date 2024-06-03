@@ -2,7 +2,7 @@
 title: 16-数组
 lang: zh-CN
 date: 2024-06-03 14:00:00
-author: makaspacex
+author: 阮一峰
 cover: 
 tags:
 ---

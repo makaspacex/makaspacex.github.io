@@ -2,7 +2,7 @@
 title: 10-目录堆栈
 lang: zh-CN
 date: 2024-06-03 14:00:00
-author: makaspacex
+author: 阮一峰
 cover: 
 tags:
 ---
