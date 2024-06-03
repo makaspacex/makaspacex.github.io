@@ -49,6 +49,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'ES6教程', link: '/programer/es6/00-前言.md' },
+      { text: 'Bash教程', link: '/programer/bash/01-intro.md' },
       { text: '关于', link: '/pages/about' },
       { text: '隐私政策', link: '/pages/private' },
     ],
