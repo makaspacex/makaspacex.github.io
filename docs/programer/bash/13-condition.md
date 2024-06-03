@@ -1,14 +1,16 @@
 ---
-title: 13-条件判断
+title: 条件判断
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
-# 条件判断
 
+# 条件判断
 
 本章介绍 Bash 脚本的条件判断语法。
 

@@ -1,11 +1,13 @@
 ---
-title: 08-操作历史
+title: 操作历史
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
 
 # 操作历史

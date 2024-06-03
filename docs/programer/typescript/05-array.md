@@ -4,7 +4,7 @@ lang: zh-CN
 hidden: true
 date: 2024-06-03 14:30:00
 author: 阮一峰
-recommend: 5
+recommend: false
 cover: 
 tags:
 - typescript

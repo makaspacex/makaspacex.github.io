@@ -1,12 +1,15 @@
 ---
-title: 12-read 命令
+title: read 命令
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
+
 # read 命令
 
 ## 用法

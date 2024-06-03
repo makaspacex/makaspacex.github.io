@@ -1,12 +1,15 @@
 ---
-title: 11-脚本入门
+title: 脚本入门
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
+
 # Bash 脚本入门
 
 脚本（script）就是包含一系列命令的一个文本文件。Shell 读取这个文件，依次执行里面的所有命令，就好像这些命令直接输入到命令行一样。所有能够在命令行完成的任务，都能够用脚本完成。

@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // 导入主题的配置
 import { sugaratThemeConfig } from './sugarat-theme-config'
+import sidebar from './sidebar/index'
 
 // 如果使用 GitHub/Gitee Pages 等公共平台部署
 // 通常需要修改 base 路径，通常为“/仓库名/”
@@ -39,7 +40,7 @@ export default defineConfig({
 
     // 设置logo
     logo: '/logo.png',
-
+    sidebar,
     // 去github上编辑
     editLink: {
       pattern:
@@ -48,14 +49,20 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'ES6教程', link: '/programer/es6/00-前言.md' },
-      { text: 'Bash教程', link: '/programer/bash/01-intro.md' },
-      { text: 'Typescript教程', link: '/programer/typescript/01-intro.md' },
+      {
+        text: '教程',
+        items: [
+          { text: 'ES6教程', link: '/programer/es6/01-intro.md' },
+          { text: 'Bash教程', link: '/programer/bash/01-intro' },
+          { text: 'TS教程', link: '/programer/typescript/01-intro' },
+          { text: 'JS教程', link: '/programer/javascript/1.1-introduction' },
+        ],
+      },
       { text: '关于', link: '/pages/about' },
       { text: '隐私政策', link: '/pages/private' },
     ],
     socialLinks: [
-      { icon: 'github',link: 'https://github.com/makaspacex/makaspacex.github.io' }
+      { icon: 'github', link: 'https://github.com/makaspacex/makaspacex.github.io' }
     ],
   },
   markdown: {

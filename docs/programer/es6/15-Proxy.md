@@ -1,11 +1,13 @@
 ---
-title: 15-Proxy
+title: Proxy
 lang: zh-CN
 hidden: true
-date: 2024-05-16 10:24:23
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- es6
 ---
 
 # Proxy

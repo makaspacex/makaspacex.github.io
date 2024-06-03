@@ -1,12 +1,15 @@
 ---
-title: 17-set 命令，shopt 命令
+title: set 命令，shopt 命令
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
+
 # set 命令，shopt 命令
 
 `set`命令是 Bash 脚本的重要环节，却常常被忽视，导致脚本的安全性和可维护性出问题。本章介绍`set`的基本用法，帮助你写出更安全的 Bash 脚本。

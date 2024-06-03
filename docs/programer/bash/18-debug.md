@@ -1,11 +1,13 @@
 ---
-title: 18-脚本除错
+title: 脚本除错
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
 
 # 脚本除错

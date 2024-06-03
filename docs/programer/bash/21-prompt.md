@@ -1,12 +1,15 @@
 ---
-title: 21-命令提示符
+title: 命令提示符
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
+
 # 命令提示符
 
 用户进入 Bash 以后，Bash 会显示一个命令提示符，用来提示用户在该位置后面输入命令。

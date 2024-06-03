@@ -1,11 +1,13 @@
 ---
-title: 05-变量
+title: 变量
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
 
 # Bash 变量

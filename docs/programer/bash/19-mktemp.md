@@ -1,12 +1,15 @@
 ---
-title: 19-mktemp 命令，trap 命令
+title: mktemp 命令，trap 命令
 lang: zh-CN
 hidden: true
-date: 2024-06-03 14:00:00
+date: 2024-06-03 14:30:00
 author: 阮一峰
+recommend: false
 cover: 
 tags:
+- bash
 ---
+
 # mktemp 命令，trap 命令
 
 Bash 脚本有时需要创建临时文件或临时目录。常见的做法是，在`/tmp`目录里面创建文件或目录，这样做有很多弊端，使用`mktemp`命令是最安全的做法。
