@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@element-plus/icons-vue':
         specifier: ^2.3.1
-        version: 2.3.1(vue@3.4.26(typescript@5.4.5))
+        version: 2.3.1(vue@3.4.27(typescript@5.4.5))
       '@sugarat/theme':
         specifier: ^0.3.6
-        version: 0.3.6(@element-plus/icons-vue@2.3.1(vue@3.4.26(typescript@5.4.5)))(element-plus@2.7.2(vue@3.4.26(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.26(typescript@5.4.5))
+        version: 0.3.6(@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5)))(element-plus@2.7.2(vue@3.4.27(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))
       element-plus:
         specifier: ^2.7.2
-        version: 2.7.2(vue@3.4.26(typescript@5.4.5))
+        version: 2.7.2(vue@3.4.27(typescript@5.4.5))
       vue:
-        specifier: 3.4.26
-        version: 3.4.26(typescript@5.4.5)
+        specifier: 3.4.27
+        version: 3.4.27(typescript@5.4.5)
     devDependencies:
       less:
         specifier: ^4.2.0
@@ -2221,9 +2221,9 @@ snapshots:
     transitivePeerDependencies:
       - '@algolia/client-search'
 
-  '@element-plus/icons-vue@2.3.1(vue@3.4.26(typescript@5.4.5))':
+  '@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5))':
     dependencies:
-      vue: 3.4.26(typescript@5.4.5)
+      vue: 3.4.27(typescript@5.4.5)
 
   '@esbuild/aix-ppc64@0.20.2':
     optional: true
@@ -2305,10 +2305,10 @@ snapshots:
 
   '@floating-ui/utils@0.2.2': {}
 
-  '@giscus/vue@2.4.0(vue@3.4.26(typescript@5.4.5))':
+  '@giscus/vue@2.4.0(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       giscus: 1.5.0
-      vue: 3.4.26(typescript@5.4.5)
+      vue: 3.4.27(typescript@5.4.5)
 
   '@jridgewell/sourcemap-codec@1.4.15': {}
 
@@ -2417,15 +2417,15 @@ snapshots:
     dependencies:
       shiki: 1.6.0
 
-  '@sugarat/theme@0.3.6(@element-plus/icons-vue@2.3.1(vue@3.4.26(typescript@5.4.5)))(element-plus@2.7.2(vue@3.4.26(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.26(typescript@5.4.5))':
+  '@sugarat/theme@0.3.6(@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5)))(element-plus@2.7.2(vue@3.4.27(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
-      '@element-plus/icons-vue': 2.3.1(vue@3.4.26(typescript@5.4.5))
-      '@giscus/vue': 2.4.0(vue@3.4.26(typescript@5.4.5))
+      '@element-plus/icons-vue': 2.3.1(vue@3.4.27(typescript@5.4.5))
+      '@giscus/vue': 2.4.0(vue@3.4.27(typescript@5.4.5))
       '@mdit-vue/shared': 0.12.1
       '@mermaid-js/mermaid-mindmap': 9.3.0
       '@vue/shared': 3.4.27
-      '@vueuse/core': 9.13.0(vue@3.4.26(typescript@5.4.5))
-      element-plus: 2.7.2(vue@3.4.26(typescript@5.4.5))
+      '@vueuse/core': 9.13.0(vue@3.4.27(typescript@5.4.5))
+      element-plus: 2.7.2(vue@3.4.27(typescript@5.4.5))
       fast-glob: 3.3.2
       gray-matter: 4.0.3
       markdown-it-task-checkbox: 1.0.6
@@ -2436,7 +2436,7 @@ snapshots:
       vitepress-plugin-mermaid: 2.0.13(mermaid@10.9.0)(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))
       vitepress-plugin-pagefind: 0.3.3(pagefind@1.1.0)(typescript@5.4.5)
       vitepress-plugin-rss: 0.2.6(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))
-      vitepress-plugin-tabs: 0.2.0(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.26(typescript@5.4.5))
+      vitepress-plugin-tabs: 0.2.0(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - pagefind
@@ -2649,6 +2649,16 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  '@vueuse/core@9.13.0(vue@3.4.27(typescript@5.4.5))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.16
+      '@vueuse/metadata': 9.13.0
+      '@vueuse/shared': 9.13.0(vue@3.4.27(typescript@5.4.5))
+      vue-demi: 0.14.7(vue@3.4.27(typescript@5.4.5))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
   '@vueuse/integrations@10.9.0(async-validator@4.2.5)(focus-trap@7.5.4)(fuse.js@6.6.2)(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       '@vueuse/core': 10.9.0(vue@3.4.27(typescript@5.4.5))
@@ -2676,6 +2686,13 @@ snapshots:
   '@vueuse/shared@9.13.0(vue@3.4.26(typescript@5.4.5))':
     dependencies:
       vue-demi: 0.14.7(vue@3.4.26(typescript@5.4.5))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
+  '@vueuse/shared@9.13.0(vue@3.4.27(typescript@5.4.5))':
+    dependencies:
+      vue-demi: 0.14.7(vue@3.4.27(typescript@5.4.5))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -3108,15 +3125,15 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 4.3.1
 
-  element-plus@2.7.2(vue@3.4.26(typescript@5.4.5)):
+  element-plus@2.7.2(vue@3.4.27(typescript@5.4.5)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
-      '@element-plus/icons-vue': 2.3.1(vue@3.4.26(typescript@5.4.5))
+      '@element-plus/icons-vue': 2.3.1(vue@3.4.27(typescript@5.4.5))
       '@floating-ui/dom': 1.6.5
       '@popperjs/core': '@sxzz/popperjs-es@2.11.7'
       '@types/lodash': 4.17.1
       '@types/lodash-es': 4.17.12
-      '@vueuse/core': 9.13.0(vue@3.4.26(typescript@5.4.5))
+      '@vueuse/core': 9.13.0(vue@3.4.27(typescript@5.4.5))
       async-validator: 4.2.5
       dayjs: 1.11.11
       escape-html: 1.0.3
@@ -3125,7 +3142,7 @@ snapshots:
       lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
       memoize-one: 6.0.0
       normalize-wheel-es: 1.2.0
-      vue: 3.4.26(typescript@5.4.5)
+      vue: 3.4.27(typescript@5.4.5)
     transitivePeerDependencies:
       - '@vue/composition-api'
 
@@ -4295,10 +4312,10 @@ snapshots:
       gray-matter: 4.0.3
       vitepress: 1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5)
 
-  vitepress-plugin-tabs@0.2.0(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.26(typescript@5.4.5)):
+  vitepress-plugin-tabs@0.2.0(vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5)):
     dependencies:
       vitepress: 1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5)
-      vue: 3.4.26(typescript@5.4.5)
+      vue: 3.4.27(typescript@5.4.5)
 
   vitepress@1.2.2(@algolia/client-search@4.23.3)(async-validator@4.2.5)(fuse.js@6.6.2)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.38)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5):
     dependencies:

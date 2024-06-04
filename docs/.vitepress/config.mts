@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 // 导入主题的配置
-import { sugaratThemeConfig } from './sugarat-theme-config'
-import sidebar from './sidebar/index'
+import sugaratThemeConfig from './sugarat-theme-config'
+import sidebar from './sidebar'
 
 // 如果使用 GitHub/Gitee Pages 等公共平台部署
 // 通常需要修改 base 路径，通常为“/仓库名/”
@@ -24,8 +24,7 @@ export default defineConfig({
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
-    // ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
   ],
   themeConfig: {
     // 展示 2,3 级标题在目录中
@@ -46,6 +45,10 @@ export default defineConfig({
       pattern:
         'https://github.com/makaspacex/makaspacex.github.io/blob/main/docs/:path',
       text: '去 GitHub 上编辑内容'
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
     },
     nav: [
       { text: '首页', link: '/' },
