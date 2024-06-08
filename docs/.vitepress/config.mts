@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { chineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind'
 
 // 导入主题的配置
 import sugaratThemeConfig from './sugarat-theme-config'
@@ -26,6 +27,11 @@ export default defineConfig({
     // 配置网站的图标（显示在浏览器的 tab 上）
     ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
   ],
+  vite: {
+    plugins: [pagefindPlugin({
+      customSearchQuery: chineseSearchOptimize
+    })],
+  },
   themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {

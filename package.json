@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "@sugarat/theme": "^0.4.0",
+    "@sugarat/theme": "^0.4.1",
     "element-plus": "^2.7.2",
+    "pagefind": "^1.1.0",
+    "vitepress-plugin-pagefind": "^0.4.1",
     "vue": "3.4.27"
   },
   "directories": {
