@@ -28,7 +28,14 @@ export default defineConfig({
     ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
   ],
   vite: {
-    plugins: [pagefindPlugin()],
+    plugins: [pagefindPlugin({
+      customSearchQuery(input) {
+        // 将搜索的每个中文单字两侧加上空格
+        return input.replace(/[\u4E00-\u9FA5]/g, ' $& ')
+          .replace(/\s+/g, ' ')
+          .trim()
+      }
+    })],
   },
   themeConfig: {
     // 展示 2,3 级标题在目录中
