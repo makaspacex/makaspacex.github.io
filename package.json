@@ -10,7 +10,7 @@
     "serve": "vitepress serve docs",
     "push": "git add *; git add .*; git commit -m 'update'; git push",
     "upload": "rsync -avzH --delete -e 'ssh -p 7004' docs/.vitepress/dist/ www@blog.makafly.com:/opt/1panel/apps/openresty/openresty/www/sites/blog.makafly.com/index",
-    "publish": "npm-run-all -s build -lp push upload"
+    "publish": "npm-run-all -s push build upload"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
