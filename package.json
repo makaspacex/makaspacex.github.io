@@ -9,7 +9,7 @@
     "build": "vitepress build docs",
     "serve": "vitepress serve docs",
     "push": "git add *; git add .*; git commit -m 'update'; git push",
-    "upload": "rsync -avzH --delete -e 'ssh -p 7004' docs/.vitepress/dist/ www@blog.makafly.com:/opt/1panel/apps/openresty/openresty/www/sites/blog.makafly.com/index",
+    "upload": "rsync -avzH --delete -e 'ssh -p 7001' docs/.vitepress/dist/ makaflow@blog.makafly.com:/opt/1panel/apps/openresty/openresty/www/sites/blog.makafly.com/index",
     "pub": "npm-run-all -s build -lp push upload"
   },
   "dependencies": {
