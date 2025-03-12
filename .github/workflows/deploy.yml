@@ -53,11 +53,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # 使用 PNPM V8
-      - uses: pnpm/action-setup@v2
+      # 使用 PNPM V10
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 9
+          version: 10
           run_install: false
 
       # 安装依赖
