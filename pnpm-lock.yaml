@@ -13,10 +13,10 @@ importers:
         version: 2.3.1(vue@3.4.27(typescript@5.4.5))
       '@sugarat/theme':
         specifier: ^0.5.4
-        version: 0.5.4(@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5)))(element-plus@2.7.2(vue@3.4.27(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.3.4(@algolia/client-search@4.23.3)(async-validator@4.2.5)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))
+        version: 0.5.4(@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5)))(element-plus@2.9.6(vue@3.4.27(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.3.4(@algolia/client-search@4.23.3)(async-validator@4.2.5)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))
       element-plus:
-        specifier: ^2.7.2
-        version: 2.7.2(vue@3.4.27(typescript@5.4.5))
+        specifier: ^2.9.6
+        version: 2.9.6(vue@3.4.27(typescript@5.4.5))
       pagefind:
         specifier: ^1.1.0
         version: 1.1.0
@@ -440,46 +440,55 @@ packages:
     resolution: {integrity: sha512-ztRJJMiE8nnU1YFcdbd9BcH6bGWG1z+jP+IPW2oDUAPxPjo9dverIOyXz76m6IPA6udEL12reYeLojzW2cYL7w==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.21.2':
     resolution: {integrity: sha512-flOcGHDZajGKYpLV0JNc0VFH361M7rnV1ee+NTeC/BQQ1/0pllYcFmxpagltANYt8FYf9+kL6RSk80Ziwyhr7w==}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.21.2':
     resolution: {integrity: sha512-69CF19Kp3TdMopyteO/LJbWufOzqqXzkrv4L2sP8kfMaAQ6iwky7NoXTp7bD6/irKgknDKM0P9E/1l5XxVQAhw==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.21.2':
     resolution: {integrity: sha512-48pD/fJkTiHAZTnZwR0VzHrao70/4MlzJrq0ZsILjLW/Ab/1XlVUStYyGt7tdyIiVSlGZbnliqmult/QGA2O2w==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.21.2':
     resolution: {integrity: sha512-cZdyuInj0ofc7mAQpKcPR2a2iu4YM4FQfuUzCVA2u4HI95lCwzjoPtdWjdpDKyHxI0UO82bLDoOaLfpZ/wviyQ==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.21.2':
     resolution: {integrity: sha512-RL56JMT6NwQ0lXIQmMIWr1SW28z4E4pOhRRNqwWZeXpRlykRIlEpSWdsgNWJbYBEWD84eocjSGDu/XxbYeCmwg==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.21.2':
     resolution: {integrity: sha512-PMxkrWS9z38bCr3rWvDFVGD6sFeZJw4iQlhrup7ReGmfn7Oukrr/zweLhYX6v2/8J6Cep9IEA/SmjXjCmSbrMQ==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.21.2':
     resolution: {integrity: sha512-B90tYAUoLhU22olrafY3JQCFLnT3NglazdwkHyxNDYF/zAxJt5fJUB/yBoWFoIQ7SQj+KLe3iL4BhOMa9fzgpw==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.21.2':
     resolution: {integrity: sha512-7twFizNXudESmC9oneLGIUmoHiiLppz/Xs5uJQ4ShvE6234K0VB1/aJYU3f/4g7PhssLGKBVCC37uRkkOi8wjg==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.21.2':
     resolution: {integrity: sha512-9rRero0E7qTeYf6+rFh3AErTNU1VCQg2mn7CQcI44vNUWM9Ze7MSRS/9RFuSsox+vstRt97+x3sOhEey024FRQ==}
@@ -1055,6 +1064,9 @@ packages:
   dayjs@1.11.11:
     resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
 
+  dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
+
   debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
@@ -1115,8 +1127,8 @@ packages:
   domutils@2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
 
-  element-plus@2.7.2:
-    resolution: {integrity: sha512-AdEzBU/A68iUleio0MkQ46JeU5SeQvFFd915GJFScJmUEo5AmYg3OQ4pVjcu+p3b3Nupg9MC5Wa4xjAiC51kUg==}
+  element-plus@2.9.6:
+    resolution: {integrity: sha512-D9zU28Ce0s/9O/Vp3ewemikxzFVA6gdZyMwmWijHijo+t5/9H3sHRTIm1WlfeNpFW2Yq0y8nHXD0fU5YxU6qlQ==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -2679,7 +2691,7 @@ snapshots:
       cross-spawn: 7.0.3
       gray-matter: 4.0.3
 
-  '@sugarat/theme@0.5.4(@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5)))(element-plus@2.7.2(vue@3.4.27(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.3.4(@algolia/client-search@4.23.3)(async-validator@4.2.5)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))':
+  '@sugarat/theme@0.5.4(@element-plus/icons-vue@2.3.1(vue@3.4.27(typescript@5.4.5)))(element-plus@2.9.6(vue@3.4.27(typescript@5.4.5)))(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.3.4(@algolia/client-search@4.23.3)(async-validator@4.2.5)(less@4.2.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(sass@1.77.0)(search-insights@2.14.0)(stylus@0.63.0)(typescript@5.4.5))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       '@element-plus/icons-vue': 2.3.1(vue@3.4.27(typescript@5.4.5))
       '@giscus/vue': 2.4.0(vue@3.4.27(typescript@5.4.5))
@@ -2688,7 +2700,7 @@ snapshots:
       '@sugarat/theme-shared': 0.0.4
       '@vue/shared': 3.5.3
       '@vueuse/core': 9.13.0(vue@3.4.27(typescript@5.4.5))
-      element-plus: 2.7.2(vue@3.4.27(typescript@5.4.5))
+      element-plus: 2.9.6(vue@3.4.27(typescript@5.4.5))
       markdown-it-task-checkbox: 1.0.6
       mermaid: 10.9.0
       oh-my-live2d: 0.19.3
@@ -3405,6 +3417,8 @@ snapshots:
 
   dayjs@1.11.11: {}
 
+  dayjs@1.11.13: {}
+
   debug@4.3.4:
     dependencies:
       ms: 2.1.2
@@ -3461,7 +3475,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 4.3.1
 
-  element-plus@2.7.2(vue@3.4.27(typescript@5.4.5)):
+  element-plus@2.9.6(vue@3.4.27(typescript@5.4.5)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.1(vue@3.4.27(typescript@5.4.5))
@@ -3471,7 +3485,7 @@ snapshots:
       '@types/lodash-es': 4.17.12
       '@vueuse/core': 9.13.0(vue@3.4.27(typescript@5.4.5))
       async-validator: 4.2.5
-      dayjs: 1.11.11
+      dayjs: 1.11.13
       escape-html: 1.0.3
       lodash: 4.17.21
       lodash-es: 4.17.21
