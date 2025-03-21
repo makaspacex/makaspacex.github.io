@@ -22,20 +22,15 @@ export default defineConfig({
   titleTemplate: ':title',
   description: '使用博客主题@sugarat/theme，基于 vitepress 实现',
   lastUpdated: true,
+  ignoreDeadLinks: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
     ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
   ],
   vite: {
-    plugins: [pagefindPlugin({
-      customSearchQuery(input) {
-        // 将搜索的每个中文单字两侧加上空格
-        return input.replace(/[\u4E00-\u9FA5]/g, ' $& ')
-          .replace(/\s+/g, ' ')
-          .trim()
-      }
-    })],
+    // plugins: [pagefindPlugin({customSearchQuery: chineseSearchOptimize})],
+    plugins: [pagefindPlugin()],
   },
   themeConfig: {
     // 展示 2,3 级标题在目录中
