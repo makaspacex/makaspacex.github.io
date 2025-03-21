@@ -59,6 +59,11 @@ export default getThemeConfig({
       url: 'https://www.ruanyifeng.com/',
       des: '保持专注，持续发货。尽早构建，始终构建。提高自己，编写可靠/简单/愚蠢的代码。'
     },
+    {
+      nickname: 'scutan90',
+      url: 'https://github.com/scutan90/DeepLearning-500-questions',
+      des: '保持专注，持续发货。'
+    },
 
   ],
   // 默认开启

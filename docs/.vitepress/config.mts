@@ -72,6 +72,7 @@ export default defineConfig({
           { text: 'JS教程', link: '/programer/javascript/1.1-introduction' },
         ],
       },
+      { text: 'DL复习', link: '/dlwarm/第一章_数学基础' },
       { text: '关于', link: '/pages/about' },
       { text: '隐私政策', link: '/pages/private' },
     ],
@@ -86,3 +87,4 @@ export default defineConfig({
     }
   }
 })
+
