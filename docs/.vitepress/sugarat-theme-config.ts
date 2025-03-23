@@ -64,6 +64,16 @@ export default getThemeConfig({
       url: 'https://github.com/scutan90/DeepLearning-500-questions',
       des: '保持专注，持续发货。'
     },
+    {
+      nickname: 'datawhalechina',
+      url: 'https://github.com/datawhalechina/leedl-tutorial',
+      des: '保持专注，持续发货。'
+    },
+    {
+      nickname: 'Sakura-gh',
+      url: 'https://github.com/Sakura-gh/ML-notes',
+      des: '应用之道，存乎一心，与大家共勉'
+    },
 
   ],
   // 默认开启
