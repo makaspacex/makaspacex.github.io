@@ -5,9 +5,11 @@ import DefaultTheme from 'vitepress/theme'
 import ElementPlus from "element-plus"
 import "element-plus/dist/index.css"
 import * as ElementPlusIconsVue from "@element-plus/icons-vue"
+import { h } from 'vue'
 
 // 自定义样式重载
 import "./style.scss"
+import MyLayout from './MyLayout.vue'
 
 export default {
   extends: SugaratTheme,
@@ -17,4 +19,5 @@ export default {
       app.component(key, component)
     }
   },
+  Layout:MyLayout
 } satisfies Theme
