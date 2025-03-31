@@ -5,6 +5,7 @@ import { default as sidebarBash }  from './bash'
 import { default as sidebarDlwarm }  from './dlwarm'
 import { default as sidebarLeedl }  from './leedl'
 import { default as sidebarMlnotes }  from './mlnotes'
+import { default as sidebarwdndevLLM }  from './llm_wdndev'
 
 export default {
     '/': [{
@@ -16,4 +17,5 @@ export default {
     '/notes/dlwarm/': sidebarDlwarm(),
     '/notes/leedl/': sidebarLeedl(),
     '/notes/mlnotes/': sidebarMlnotes(),
+    '/llm/wdndev/': sidebarwdndevLLM(),
 }

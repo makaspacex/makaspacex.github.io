@@ -73,6 +73,11 @@ export default getThemeConfig({
       nickname: 'Sakura-gh',
       url: 'https://github.com/Sakura-gh/ML-notes',
       des: '应用之道，存乎一心，与大家共勉'
+    }, 
+    {
+      nickname: 'wdndev',
+      url: 'https://github.com/wdndev/llm_interview_note',
+      des: '应用之道，存乎一心，与大家共勉'
     },
 
   ],

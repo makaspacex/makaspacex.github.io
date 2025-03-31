@@ -72,6 +72,13 @@ export default defineConfig({
           { text: '李宏毅机器学习(2021 Spring)', link: '/notes/leedl/第 1 章 机器学习基础', activeMatch: '/notes/leedl/' },
         ]
       },
+      {
+        text: '大语言模型',
+        activeMatch: '/llm/',
+        items:[
+          { text: 'LLMs相关知识及面试题(wdndev)', link: '/llm/wdndev/README', activeMatch: '/llm/wdndev/' },
+        ]
+      },
       { text: '关于', link: '/pages/about' },
       { text: '隐私政策', link: '/pages/private' },
     ],
