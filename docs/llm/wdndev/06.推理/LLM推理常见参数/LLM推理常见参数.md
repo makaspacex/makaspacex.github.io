@@ -25,7 +25,7 @@ recommend: false
 
 如下图所示，将输入“`a robot must obey the orders given it`”对应的embedding输入Transformer Decoding后，在最后的Transformer Decoder之后，每个Token对应的位置相应的也会生成一个新的embedding，然后使用最后一个Token“`it`”**对应的新生成的embedding（蓝色）** 来生成新的Token“`Okay`”，之后将新的Token“`Okay`”也作为输入，进一步根据“`Okay`”对应位置新生成的embedding来生成新的Token“`human`”，以此类推：
 
-![](<image/640 (1)_5Y5ZVQhUfP.gif>)
+![]([<image](https://cdn.jsdelivr.net/gh/makaspacex/PictureZone@main/libs/wdndev/image)/640 (1)_5Y5ZVQhUfP.gif)
 
 那么怎么**根据新生成的embedding**来生成下一个Token呢，如下图所示，具体来说是**让新生成的embedding与Token Embeddings矩阵相乘**（也就是和每个Token对应的embedding向量做内积），得到和词表中每个Token的相似性得分（`logits`），然后基于这个得分即可以选择生成新的Token（比如直接取得分最高的Token）。
 

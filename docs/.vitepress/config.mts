@@ -61,6 +61,7 @@ export default defineConfig({
           { text: 'Bash教程', link: '/programer/bash/01-intro', activeMatch: '/programer/bash/' },
           { text: 'TS教程', link: '/programer/typescript/01-intro', activeMatch: '/programer/typescript/' },
           { text: 'JS教程', link: '/programer/javascript/1.1-introduction', activeMatch: '/programer/javascript/' },
+          { text: 'C语言教程', link: '/programer/clang/intro', activeMatch: '/programer/clang/' },
         ],
       },
       {
