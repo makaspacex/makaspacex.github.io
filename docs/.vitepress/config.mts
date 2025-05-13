@@ -62,6 +62,7 @@ export default defineConfig({
           { text: 'TS教程', link: '/programer/typescript/01-intro', activeMatch: '/programer/typescript/' },
           { text: 'JS教程', link: '/programer/javascript/1.1-introduction', activeMatch: '/programer/javascript/' },
           { text: 'C语言教程', link: '/programer/clang/intro', activeMatch: '/programer/clang/' },
+          { text: 'Joyful-Pandas', link: '/programer/pandas/README.md', activeMatch: '/programer/pandas/' },
         ],
       },
       {
